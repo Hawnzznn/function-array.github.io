@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Objek dalam HTML</title>
+</head>
+<body>
+    <h1>Data Siswa</h1>
+    <ul id="daftarSiswa">
+        <!-- Daftar siswa akan ditampilkan di sini -->
+    </ul>
+
+    <script>
+        const dataSiswa = [
+            { id: 1, nama: "Hawa", umur: 17, kelas: "XI-RPL" },
+            { id: 2, nama: "Nur", umur: 16, kelas: "XI-TKJ" },
+            { id: 3, nama: "Fadlillah", umur: 18, kelas: "XI-AK" }
+            
+        ];
+
+        
+        const daftarSiswa = document.getElementById('daftarSiswa');
+
+        
+        dataSiswa.forEach(siswa => {
+            const li = document.createElement('li');
+            li.textContent = `ID: ${siswa.id}, Nama: ${siswa.nama}, Umur: ${siswa.umur}, Kelas: ${siswa.kelas}`;
+            daftarSiswa.appendChild(li);
+        });
+    </script>
+</body>
+</html>

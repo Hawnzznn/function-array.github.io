@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ubah Teks dan Warna</title>
+</head>
+<body>
+    <h1 id="judul">Selamat Datang</h1>
+    <button onclick="ubahTeksDanWarna()">Ubah Teks dan Warna</button>
+
+    <script>
+        function ubahTeksDanWarna() {
+            const judul = document.getElementById('judul');
+            judul.textContent = 'Teks telah diubah!';
+
+            
+            judul.style.color = 'blue';
+
+            
+            judul.style.backgroundColor = 'yellow';
+        }
+    </script>
+</body>
+</html>
